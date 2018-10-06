@@ -50,9 +50,13 @@ header a:hover{
 }
 
 main{
+  min-height: 620px;
+}
+
+#card{
   max-width: 520px;
   background: #FFF;
-  margin: 88px auto auto auto;
+  margin: 110px auto auto auto;
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.28);
   overflow: hidden;
   transition: height 0.25s ease-in;
@@ -77,6 +81,11 @@ button:hover, .button:hover{
 }
 
 .wrapper{
+  max-width: 1280px;
+  margin:auto;
+}
+
+#card .wrapper{
   padding:11px;
   box-sizing: border-box;
 }
@@ -155,5 +164,5 @@ button:hover, .button:hover{
 }
 
 footer{
-  padding:22px 11px;
+  padding:44px 11px 11px 11px;
 }
