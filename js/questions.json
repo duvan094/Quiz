@@ -1,0 +1,59 @@
+[
+  {
+    "id" : 0,
+    "title" : "Would you rather always be 10 minutes late or always be 20 minutes early?",
+    "alternatives" : [{
+        "id" : 1,
+        "text" : "10 minutes late"
+    },{
+      "id" : 2,
+      "text" : "20 minutes early"
+    }],
+    "answer" : 2
+  },
+  {
+    "id" : 1,
+    "title" : "Would you rather be famous when you are alive and forgotten when you die or unknown when you are alive but famous after you die?",
+    "alternatives" : [{
+        "id" : 1,
+        "text" : "Famous when you are alive"
+    },{
+      "id" : 2,
+      "text" : "Eat a guitar"
+    },{
+      "id" : 3,
+      "text" : "Listen to Nirvana"
+    }],
+    "answer" : 2
+  },
+  {
+    "id" : 2,
+    "title" : "Would you rather your shirts be always two sizes too big or one size too small?",
+    "alternatives" : [{
+        "id" : 1,
+        "text" : "Two sizes too big"
+    },{
+      "id" : 2,
+      "text" : "One size too small"
+    }],
+    "answer" : 2
+  },
+  {
+    "id" : 3,
+    "title" : "Would you rather be alone for the rest of your life or always be surrounded by annoying people?",
+    "alternatives" : [{
+        "id" : 1,
+        "text" : "Alone"
+    },{
+      "id" : 2,
+      "text" : "Surrounded by annoying people"
+    },{
+      "id" : 3,
+      "text" : "Eat a dick"
+    },{
+      "id" : 4,
+      "text" : "Famous after you die"
+    }],
+    "answer" : 1
+  }
+]
