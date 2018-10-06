@@ -7,7 +7,7 @@ xhttp.onreadystatechange = function() {//Retrieve all the questions
    displayQuestion(0);
   }
 };
-xhttp.open("GET", "js/questions.json", true);
+xhttp.open("GET", "questions.json", true);
 xhttp.send();
 
 
