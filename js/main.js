@@ -13,6 +13,8 @@ xhttp.send();
 
 const answers = [];
 
+const card = document.getElementById("card");
+
 function displayQuestion(id){
   const questionContainer = document.getElementById("question");
   questionContainer.innerHTML = "";
@@ -41,6 +43,8 @@ function displayQuestion(id){
 
   questionContainer.appendChild(title);
   questionContainer.appendChild(altContainer);
+
+  resize();
 }
 
 function clickAlt(event){
@@ -150,4 +154,14 @@ function showResult(){
 
   resultContainer.appendChild(retryButton);
 
+  resize();
+
+}
+
+window.onresize = function(event) {
+  resize();
+};
+
+function resize(){
+  card.style.height = document.getElementById("container").offsetHeight + "px";
 }
