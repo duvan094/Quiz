@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif:700');
 
+
 h1,h2,h3,h4,h5{
   font-family: 'PT Serif', serif;
 }
@@ -15,9 +16,9 @@ h1,h2,h3,h4,h5,p,small{
 
 body{
   background: #FFF;
-  min-height:100vh;
   padding:0;
   margin:0;
+  min-height:100vh;
 }
 
 header{
@@ -26,6 +27,7 @@ header{
   width:100%;
   padding:11px;
   background:#FFF;
+  z-index: 100;
 }
 
 header h1{
@@ -44,8 +46,8 @@ header a:hover{
 }
 
 main{
-  padding-top:88px;
-  min-height:720px;
+  padding-top:66px;
+  min-height:520px;
 }
 
 button,.button{
@@ -56,7 +58,6 @@ button,.button{
   border:none;
   transition:background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   cursor:pointer;
-  white-space: nowrap;
   text-decoration: none;
   display:block;
   text-align: center;
@@ -143,5 +144,5 @@ button:hover, .button:hover{
 }
 
 footer{
-  padding:11px;
+  padding:22px 11px;
 }

@@ -11,11 +11,6 @@ xhttp.open("GET", "questions.json", true);
 xhttp.send();
 
 
-
-
-
-
-
 const answers = [];
 
 function displayQuestion(id){
@@ -58,6 +53,7 @@ function clickAlt(event){
   var answer = {
     questionId : questionId,
     answerId : answerId,
+    answerText : event.target.innerHTML,
     correct : answerCheck(questionId,answerId)
   };
 
@@ -75,11 +71,13 @@ function answerCheck(questionId,answerId){
   for(let i = 0; i < questions.length; i++){
 
     if(questions[i].id == questionId){ //Find the right question
-      if(questions[i].answer == answerId){ //Check the answer
-        return true;
-      }else{
-        return false;
+      for(let x = 0; x < questions[i].answer.length; x++){
+        if(questions[i].answer[x] == answerId){ //Check the answer
+          return true;
+        }
       }
+      return false;
+
     }
 
   }
@@ -139,12 +137,11 @@ function showResult(){
 
     let title = document.createElement("h4");
     title.innerHTML = questions[i].title;
-
-    let answer = document.createElement("p");
-    answer.innerHTML = answers[i].correct ? "Correct answer" : "Wrong answer";
+    let choice = document.createElement("p");
+    choice.innerHTML = "<i>“" + answers[i].answerText + "” </i> was " + (answers[i].correct ? "correct." : "wrong.");
 
     container.appendChild(title);
-    container.appendChild(answer);
+    container.appendChild(choice);
 
     resultContainer.appendChild(container);
 

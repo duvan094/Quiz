@@ -1,59 +1,62 @@
 [
   {
     "id" : 0,
-    "title" : "Would you rather always be 10 minutes late or always be 20 minutes early?",
+    "title" : "Vad heter vår lärare i Client-Server Communication?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "10 minutes late"
+        "text" : "Peter"
     },{
       "id" : 2,
-      "text" : "20 minutes early"
+      "text" : "Mr Green"
     }],
-    "answer" : 2
+    "answer" : [2]
   },
   {
     "id" : 1,
-    "title" : "Would you rather be famous when you are alive and forgotten when you die or unknown when you are alive but famous after you die?",
+    "title" : "Vem är en skön lirare?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "Famous when you are alive"
+        "text" : "Johan"
     },{
       "id" : 2,
-      "text" : "Eat a guitar"
+      "text" : "Jasmin"
     },{
       "id" : 3,
-      "text" : "Listen to Nirvana"
+      "text" : "Bruce"
     }],
-    "answer" : 2
+    "answer" : [1]
   },
   {
     "id" : 2,
-    "title" : "Would you rather your shirts be always two sizes too big or one size too small?",
+    "title" : "Har Jacob ett liv?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "Two sizes too big"
+        "text" : "Ja"
     },{
       "id" : 2,
-      "text" : "One size too small"
+      "text" : "Nej"
+    },{
+      "id" : 3,
+      "text" : "Nej och hur i hela friden ska detta hjälpa mig på tentan?"
     }],
-    "answer" : 2
+    "answer" : [2,3]
   },
   {
     "id" : 3,
-    "title" : "Would you rather be alone for the rest of your life or always be surrounded by annoying people?",
+    "title" : "Vem är lightweight?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "Alone"
+        "text" : "Martin"
     },{
       "id" : 2,
-      "text" : "Surrounded by annoying people"
+      "text" : "Mihir"
     },{
       "id" : 3,
-      "text" : "Eat a dick"
+      "text" : "Mihir Chouhan"
     },{
       "id" : 4,
-      "text" : "Famous after you die"
+      "text" : "Mirre"
     }],
-    "answer" : 1
+    "answer" : [2,3,4]
   }
 ]
