@@ -21,6 +21,8 @@ function displayQuestion(id){
 
   const question = questions[id];
 
+  document.getElementById("counter").innerHTML = (id+1) + "/" + questions.length;
+
   const title = document.createElement("h2");
   title.innerHTML = question.title;
 
