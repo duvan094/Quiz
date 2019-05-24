@@ -81,7 +81,7 @@ main{
 
 .container-wrapper{
   overflow: hidden;
-  transition: height 0.25s ease-in;
+  transition: height 0.3s ease-in;
 }
 
 #card::before{
@@ -119,39 +119,33 @@ button:hover, .button:hover{
 }
 
 #card .wrapper{
-  padding:1.5em 1em 1em 1em;
+  padding:1.5em 2em 2em 2em;
   box-sizing: border-box;
 }
-
 
 .question h2{
   text-align: center;
-  animation: 0.5s ease-out 0s 1 reveal;
+  animation: 0.4s ease-out 0s 1 reveal;
 }
 
 .alt-container{
-  padding:1em;
-  box-sizing: border-box;
   width:100%;
-  animation: 0.5s ease-out 0s 1 reveal;
+  animation: 0.4s ease-out 0s 1 reveal;
 }
 
 
 
 .disapear{
-  opacity:0;
-  transform: translateX(-50%);
-  transition: 0.25s ease-out;
+  transform: translateX(-100%);
+  transition: 0.4s ease-in;
 }
 
 @keyframes reveal {
   0% {
     transform: translateX(100%);
-    opacity:0;
   }
   100% {
     transform: translateX(0);
-    opacity:1;
   }
 }
 
@@ -176,11 +170,9 @@ button:hover, .button:hover{
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);
-    opacity:0;
   }
   100% {
     transform: translateY(0);
-    opacity:1;
   }
 }
 

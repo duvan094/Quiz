@@ -13,6 +13,7 @@ fetch('questions.json').then(response => {
 
 
 function displayQuestion(id){
+  //Clear container
   const questionContainer = document.getElementById("question");
   questionContainer.innerHTML = "";
 
@@ -66,7 +67,7 @@ function clickAlt(event){
 
   setTimeout(function(){
     newQuestion(questionId);
-  },250);
+  },400);
 }
 
 
@@ -119,7 +120,7 @@ function showResult(){
 
   const retryButton = document.createElement("a");
   retryButton.classList.add("button")
-  retryButton.href= "index.html"
+  retryButton.href= "./"
   retryButton.innerHTML = "Try again?"
 
   const correctAnswers = document.createElement("p");
