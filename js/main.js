@@ -1,19 +1,16 @@
-var questions;
 
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {//Retrieve all the questions
-  if (this.readyState == 4 && this.status == 200) {
-   questions = JSON.parse(this.responseText);
-   displayQuestion(0);
-  }
-};
-xhttp.open("GET", "questions.json", true);
-xhttp.send();
-
-
+let questions;
 const answers = [];
-
 const card = document.getElementById("card");
+
+fetch('questions.json').then(response => {
+  return response.json();
+}).then(json => {
+  questions =  JSON.stringify(json);
+  questions = JSON.parse(questions);
+  displayQuestion(0);
+});
+
 
 function displayQuestion(id){
   const questionContainer = document.getElementById("question");
@@ -56,7 +53,7 @@ function clickAlt(event){
   const questionId = event.target.parentNode.getAttribute('data-question-id');
   const answerId = event.target.getAttribute('data-id');
 
-  var answer = {
+  const answer = {
     questionId : questionId,
     answerId : answerId,
     answerText : event.target.innerHTML,
@@ -94,11 +91,9 @@ function answerCheck(questionId,answerId){
 function answered(questionId){
 
   for(let i = 0; i < answers.length; i++){
-
     if(answers[i].questionId == questionId){ //See if question has been answered already
       return true;
     }
-
   }
 
   return false;
@@ -118,16 +113,16 @@ function showResult(){
 
   const resultContainer = document.getElementById("result");
   resultContainer.innerHTML = "";
-  let heading = document.createElement("h3");
+  const heading = document.createElement("h3");
   heading.innerHTML = "Your results";
   resultContainer.appendChild(heading);
 
-  let retryButton = document.createElement("a");
+  const retryButton = document.createElement("a");
   retryButton.classList.add("button")
   retryButton.href= "index.html"
   retryButton.innerHTML = "Try again?"
 
-  let correctAnswers = document.createElement("p");
+  const correctAnswers = document.createElement("p");
   resultContainer.appendChild(correctAnswers);
 
 
@@ -136,14 +131,14 @@ function showResult(){
   for(let i = 0; i < answers.length; i++){
     correctAnswerCount = answers[i].correct ? ++correctAnswerCount : correctAnswerCount;
 
-    let container = document.createElement("div");
+    const container = document.createElement("div");
     container.classList.add("question-result");
 
     container.classList.add(answers[i].correct ? "correct" : "wrong");
 
-    let title = document.createElement("h4");
+    const title = document.createElement("h4");
     title.innerHTML = questions[i].title;
-    let choice = document.createElement("p");
+    const choice = document.createElement("p");
     choice.innerHTML = "<i>“" + answers[i].answerText + "” </i> was " + (answers[i].correct ? "correct." : "wrong.");
 
     container.appendChild(title);
@@ -164,6 +159,8 @@ window.onresize = function(event) {
   resize();
 };
 
+const heightElt = document.getElementById("height-container");
+
 function resize(){
-  card.style.height = document.getElementById("container").offsetHeight + "px";
+  heightElt.style.height = document.getElementById("container").offsetHeight + "px";
 }
