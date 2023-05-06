@@ -1,62 +1,68 @@
 [
   {
     "id" : 0,
-    "title" : "Vad heter vår lärare i Client-Server Communication?",
+    "title" : "Vad heter Portugals huvudstad?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "Peter"
+        "text" : "Madrid"
     },{
       "id" : 2,
-      "text" : "Mr Green"
+      "text" : "Lissabon"
+    },{
+      "id" : 3,
+      "text" : "Brasília"
     }],
     "answer" : [2]
   },
   {
     "id" : 1,
-    "title" : "Vem är en skön lirare?",
+    "title" : "Vilket år stupade Gustav II Adolf?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "Johan"
+        "text" : "1592"
     },{
       "id" : 2,
-      "text" : "Jasmin"
+      "text" : "1624"
     },{
       "id" : 3,
-      "text" : "Bruce"
+      "text" : "1632"
+    },{
+      "id" : 4,
+      "text" : "1667"
     }],
-    "answer" : [1]
+    "answer" : [3]
   },
   {
     "id" : 2,
-    "title" : "Har Jacob ett liv?",
+    "title" : "Vem regisserade Sagan om Ringen?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "Ja"
+        "text" : "Stanley Kubrick"
     },{
       "id" : 2,
-      "text" : "Nej"
+      "text" : "Peter Jackson"
     },{
       "id" : 3,
-      "text" : "Nej och hur i hela friden ska detta hjälpa mig på tentan?"
+      "text" : "Fracis Ford Coppola"
+    },{
+      "id" : 4,
+      "text" : "Edgar Wright"
     }],
-    "answer" : [2,3]
+    "answer" : [2]
   },
   {
     "id" : 3,
-    "title" : "Vem är lightweight?",
+    "title" : "Vad är basingredienserna i öl?",
     "alternatives" : [{
         "id" : 1,
-        "text" : "Martin"
+        "text" : "Humle / Mjöl / Vatten / Jäst"
     },{
       "id" : 2,
-      "text" : "Mihir"
+      "text" : "Humle / Malt / Vatten / Jäst"
     },{
       "id" : 3,
-      "text" : "Mihir Chouhan"
-    },{
-      "id" : 4,
-      "text" : "Mirre"
+      "text" : "Humle / Majsmjöl / Vatten / Jäst"
     }],
-    "answer" : [2,3,4]
+    "answer" : [2]
   }
 ]
